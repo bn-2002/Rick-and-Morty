@@ -10,7 +10,7 @@ const CharacterImage = ({src , alt} : CharacterImageProps) => {
 
     return (
         <Image
-        className=" rounded object-cover h-full w-full selection:bg-gray-200 " 
+        className="rounded object-cover h-full w-full selection:bg-gray-200 " 
         width={"100"} 
         height={"100"}
         alt={alt}

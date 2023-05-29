@@ -4,7 +4,7 @@ type ButtonsProps = {data  : CharactersType , isLoading  :boolean , pageNumber :
 
 const Buttons = ({data , isLoading , pageNumber, setPageNumber} : ButtonsProps) => {
     return (
-      <div className="flex justify-between w-full py-10 items-center font-Dongle selection:text-yellow-400">
+      <div className="flex justify-between w-full py-10 items-center font-Dongle selection:text-yellow-400 flex-wrap">
           <button className="p-5 bg-blue-800 text-white rounded-lg  text-[30px] disabled:bg-blue-900 disabled:cursor-not-allowed"
             onClick={()=>setPageNumber(pageNumber-1)}
             disabled={isLoading || pageNumber==1}

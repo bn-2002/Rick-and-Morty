@@ -2,6 +2,7 @@ import getQueryClient from "@/utils/getQueryClient"
 import Hydrate from "@/utils/hydrate.client"
 import { dehydrate } from "@tanstack/query-core"
 import { CharctersList, fetchCharcters } from "./characters-list"
+// import './style.css'
 
 const Hydation = async () => {
   const queryClient = getQueryClient()
