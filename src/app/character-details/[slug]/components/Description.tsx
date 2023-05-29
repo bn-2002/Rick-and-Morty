@@ -1,17 +1,19 @@
-import getStatusColor from "../helpers/getStatusColor"
-import Circle from "@/app/icons/Circle"
+import { CharacterType } from "../types"
 import Location from "@/app/icons/Location"
-import { CharacterDescriptionType } from "../types"
+import Circle from "@/app/icons/Circle"
+import getStatusColor from "@/app/characters-list/helpers/getStatusColor"
 
-const CharacterDescription = ({name , location , origin , gender,  created, status} : CharacterDescriptionType) => {
+const Description = ({characterData} : {characterData : CharacterType}) => {
+    const {name , status , location, gender , origin , created,  species, episode } = characterData
+
     return (
         <div className="text-white flex-col justify-between flex p-4">
-            {/* Header (Name)*/}
+            {/* Name */}
             <div className="text-center font-mono font-semibold text-2xl p-1 rounded-sm solid py-3">
-              <p className="selection:text-red-500 selection:bg-gray-200">{name}</p>
+            <p className="selection:text-red-500 selection:bg-gray-200">{name}</p>
             </div>
 
-            {/* Description */}
+            {/* Other Info */}
             <div className="selection:text-yellow-400">
                 {/* Status */}
                 <div className="flex gap-2 flex-row items-center">
@@ -26,7 +28,7 @@ const CharacterDescription = ({name , location , origin , gender,  created, stat
                     <div className="mb-1">
                     <Location/>
                     </div>
-                    <p className="truncate w-[180px] h-full">{location.name}</p>
+                    <p>{location.name}</p>
                 </div>
 
                 {/* Gender */}
@@ -35,7 +37,7 @@ const CharacterDescription = ({name , location , origin , gender,  created, stat
                 {/* Origin */}
                 <div className="flex gap-2">
                     <p>Origin : </p>
-                    <p className={`truncate w-[140px]`}>{origin.name}</p>
+                    <p>{origin.name}</p>
                 </div>
 
                 {/* Created at */}
@@ -43,9 +45,21 @@ const CharacterDescription = ({name , location , origin , gender,  created, stat
                     <p>Created at :</p>
                     <p className="font-extralight" >{created.slice(0,10)}</p>
                 </div>
+
+                {/* Species*/}
+                <p className="text-sm font-medium mb-2">
+                    {species}
+                </p>
+
+                {/* Episodes */}
+                <p className="text-sm font-medium mb-2">
+                Episodes : {episode.length} Episodes
+                </p>
+
             </div>
         </div>
     )
 }
 
-export default CharacterDescription
+
+export default Description

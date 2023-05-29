@@ -20,13 +20,7 @@ export type CharactersType = {
     info : any
 }
 
-export type CharacterImageProps =  {src : string , alt : string}
-
 export type CharacterDescriptionType = {
-    created : string
-    gender : string
-    location : {name: string, url: string}
     name: string
-    origin: {name:string, url: string}
     status : CharacterStatusType
 }

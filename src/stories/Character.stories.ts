@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Character from "../app/characters-list/components/Character";
+import Character from "../app/characters-list/components/CharacterCard";
 
 const meta: Meta<typeof Character> = {
   title: 'Example/Character',
