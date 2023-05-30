@@ -15,7 +15,6 @@ const fetchCharcter = async (id : number) => {
 }
 
 const CharctersDetails = () => {
-
   const id  = Number(useParams().slug)
 
   const {data, isLoading, isFetching, error} = useQuery({
@@ -26,7 +25,7 @@ const CharctersDetails = () => {
   return (
     <>
       {error && <p>Error</p>}
-      {isLoading && <CardShimmer/>}
+      {isLoading && <CardShimmer/>} 
       {data && <CharacterCard characterData={data}/>}
     </>
   )

@@ -1,13 +1,14 @@
-import { CharacterType } from "../types"
 import Location from "@/app/icons/Location"
 import Circle from "@/app/icons/Circle"
 import getStatusColor from "@/app/characters-list/helpers/getStatusColor"
+import {characterDataProps} from '../types'
 
-const Description = ({characterData} : {characterData : CharacterType}) => {
+const Description = ({characterData} : characterDataProps) => {
     const {name , status , location, gender , origin , created,  species, episode } = characterData
 
     return (
         <div className="text-white flex-col justify-between flex p-4">
+
             {/* Name */}
             <div className="text-center font-mono font-semibold text-2xl p-1 rounded-sm solid py-3">
             <p className="selection:text-red-500 selection:bg-gray-200">{name}</p>
@@ -15,6 +16,7 @@ const Description = ({characterData} : {characterData : CharacterType}) => {
 
             {/* Other Info */}
             <div className="selection:text-yellow-400">
+
                 {/* Status */}
                 <div className="flex gap-2 flex-row items-center">
                     <div className=" mb-1">
@@ -60,6 +62,5 @@ const Description = ({characterData} : {characterData : CharacterType}) => {
         </div>
     )
 }
-
 
 export default Description

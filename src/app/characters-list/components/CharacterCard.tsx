@@ -4,20 +4,23 @@ import CharacterImage from "../../components/CharacterImage"
 import Description from "./Description"
 import Link from "next/link"
 import './Header.css'
-
+import Card from "./Card"
 
 const CharacterCard = ({ character } : {character : CharacterType}) => {
   
   const {image, name, status} = character
   
+  const img =  <CharacterImage src={image} alt={name} className="rounded-sm"/>
+
+  const description = <Description name={name} status={status} />
+
   return (
-    <Link href={`./character-details/${character.id}`}>      
-     <div className="box relative z-10 h-full flex flex-col rounded-lg bg-gray-800 font-Dongle text-[28px] text-white p-4 gap-2">
-          <CharacterImage src={image} alt={name}/>
-          <Description name={name} status={status} />
-      </div>
-    </Link>
+    <Card
+    image = {img}
+    description = {description} 
+    />
   )
+
 }
 
 export default CharacterCard
