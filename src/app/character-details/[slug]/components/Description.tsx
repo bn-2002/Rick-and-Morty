@@ -1,28 +1,28 @@
-import Location from "@/app/icons/Location"
-import Circle from "@/app/icons/Circle"
-import getStatusColor from "@/app/characters-list/helpers/getStatusColor"
+import Location from "../../../icons/Location"
+import Circle from "../../../icons/Circle"
+import getStatusColor from "../../../characters-list/helpers/getStatusColor"
 import {characterDataProps} from '../types'
 
 const Description = ({characterData} : characterDataProps) => {
     const {name , status , location, gender , origin , created,  species, episode } = characterData
 
     return (
-        <div className="text-white flex-col justify-between flex p-4">
+        <div className="text-white p-4 flex-col justify-between flex gap-4 bg-gray-800 h-full">
 
             {/* Name */}
-            <div className="text-center font-mono font-semibold text-2xl p-1 rounded-sm solid py-3">
+            <div className="text-center font-mono font-semibold text-2xl rounded-sm solid">
             <p className="selection:text-red-500 selection:bg-gray-200">{name}</p>
             </div>
 
             {/* Other Info */}
-            <div className="selection:text-yellow-400">
+            <div className="selection:text-yellow-400 flex flex-col gap-2">
 
                 {/* Status */}
                 <div className="flex gap-2 flex-row items-center">
                     <div className=" mb-1">
                         <Circle fill={getStatusColor(status)?.fill} stroke={getStatusColor(status)?.stroke}/>
                     </div>
-                    <p className="font-extralight" >{status}</p>
+                    <p >{status}</p>
                 </div>
 
                 {/* Location */}
@@ -39,13 +39,13 @@ const Description = ({characterData} : characterDataProps) => {
                 {/* Origin */}
                 <div className="flex gap-2">
                     <p>Origin : </p>
-                    <p>{origin.name}</p>
+                    <p> {origin.name}</p>
                 </div>
 
                 {/* Created at */}
                 <div className="flex gap-2">
                     <p>Created at :</p>
-                    <p className="font-extralight" >{created.slice(0,10)}</p>
+                    <p >{created.slice(0,10)}</p>
                 </div>
 
                 {/* Species*/}
@@ -64,3 +64,5 @@ const Description = ({characterData} : characterDataProps) => {
 }
 
 export default Description
+
+

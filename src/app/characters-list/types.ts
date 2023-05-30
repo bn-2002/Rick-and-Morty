@@ -25,5 +25,6 @@ export type CharactersType = {
 export type CharacterDescriptionType = {
     name: string
     status : CharacterStatusType
+    id : number
 }
 

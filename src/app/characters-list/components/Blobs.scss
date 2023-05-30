@@ -1,0 +1,48 @@
+.blob {
+	border-radius: 30% 50% 20% 40%;
+}
+
+.blob-1 {
+  	animation: transform 30s ease-in-out infinite both alternate,movement_one 40s ease-in-out infinite both;
+}
+.blob-2 {
+	animation: transform 30s ease-in-out infinite both alternate, movement_two 40s ease-in-out infinite both;
+}
+
+.blob-3 {
+	animation: transform 30s ease-in-out infinite both alternate, movement_two 40s ease-in-out infinite both;
+}
+
+@keyframes transform
+{
+  0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+@keyframes movement_one
+{
+  0%,
+  100% { transform: none; }
+  50% { transform: translate(20%, 20%) rotateY(30deg) scale(1.2); }
+}
+
+@keyframes movement_two
+{
+  0%,
+  500% { transform: none; }
+  50% { transform: translate(20%, 20%) rotate(-220deg) scale(1.2);}
+}
+
+// .box {
+//   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+//   transition: all ease 0.2s;
+// }
+
+// .box:hover {
+//   transform: translateY(-5px);
+//   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+// }

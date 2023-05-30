@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
   export type CharacterType = {
       created: string;
       episode: string[]
