@@ -6,7 +6,7 @@
 
 ## Tech Stack
 
-Next.js13 - Typescript - Tailwind CSS - Storybook.js - React Query 
+Next.js13 - Typescript - Tailwind CSS - Storybook.js - React Query - Zustand
 
 ![scrnli_5_30_2023_3-35-11 AM](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/91b511c1-8914-4f1e-a6dd-7ffc1ba5db16)
 
