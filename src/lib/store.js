@@ -1,38 +1,28 @@
-import { create } from 'zustand'
+import { create } from 'zustand';
+
+const $FAVORITES_KEY = 'favorites'
 
 const useFavoritesStore = create((set) => ({
-  favorites: [],
-  initialFavorites: (initialValue) => set({ favorites: initialValue }),
-  increaseFavorites: (newCharacter) => set((state) => ({ favorites: [...state.favorites, newCharacter] })),
-  decreaseFavorites: (oldCharacter) => set((state) => ({favorites: state.favorites.filter(character => character.id !== oldCharacter.id)})),
-  removeAllFavorites: () => set({ favorites: [] }),
-}))
+  favorites: JSON.parse(localStorage.getItem($FAVORITES_KEY)) || [],
+  initialFavorites: (initialValue) => {
+    localStorage.setItem($FAVORITES_KEY, JSON.stringify(initialValue));
+    set({ favorites: initialValue });
+  },
+  increaseFavorites: (newCharacter) => set((state) => {
+    const newFavorites = [...state.favorites, newCharacter];
+    localStorage.setItem($FAVORITES_KEY, JSON.stringify(newFavorites));
+    return { favorites: newFavorites };
+  }),
+  decreaseFavorites: (oldCharacter) => set((state) => {
+    const newFavorites = state.favorites.filter(character => character.id !== oldCharacter.id);
+    localStorage.setItem($FAVORITES_KEY, JSON.stringify(newFavorites));
+    return { favorites: newFavorites };
+  }),
+  removeAllFavorites: () => {
+    localStorage.removeItem($FAVORITES_KEY);
+    set({ favorites: [] });
+  },
+}));
 
 
 export default useFavoritesStore
-
-// import { persist } from 'zustand/middleware';
-// import { create } from 'zustand';
-
-// const useFavoritesStore = create(
-//   persist(
-//     (set) => ({
-//       favorites: [{name : 'bahre'}],
-//       initialFavorites: (initialValue) => set({ favorites: initialValue }),
-//       increaseFavorites: (newCharacter) => set((state) => ({ favorites: [...state.favorites, newCharacter] })),
-//       decreaseFavorites: (oldCharacter) =>
-//         set((state) => ({
-//           favorites: state.favorites.filter(
-//             (character) => character.id !== oldCharacter.id
-//           ),
-//       })),
-//       removeAllFavorites: () => set({ favorites: [] }),
-//     }),
-//     {
-//       name: 'favorites',
-//       getStorage: () => localStorage,
-//     }
-//   )
-// );
-
-// export default useFavoritesStore;
