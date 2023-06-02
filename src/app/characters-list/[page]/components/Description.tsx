@@ -1,27 +1,25 @@
 import getStatusColor from "../helpers/getStatusColor"
-import Circle from "../../icons/Circle"
+import Circle from "../../../icons/Circle"
 import { CharacterDescriptionType } from "../types"
 import Link from "next/link"
 
 const Description = ({name, status, id} : CharacterDescriptionType) => {
-    return (
-            <div className="bg-gray-800 text-white"> 
+    return (        
+            <div className="gap-4 text-white flex justify-between h-full flex-col"> 
                 {/* Name */}
-                <p className="selection:text-red-500 selection:bg-gray-200 text-center font-mono font-semibold text-2xl ">{name}</p>
+                <Link href={`./character-details/${id}`} className="selection:text-red-500 selection:bg-gray-200 text-center font-mono font-semibold text-2xl ">{name}</Link>
 
                 {/* Status */}
-                <div className="flex gap-2  flex-row items-center selection:text-yellow-400">
-                        <div className="mb-1">
+                <div className="flex flex-row gap-2 items-center selection:text-yellow-400">
+                        <div className="">
                             <Circle fill={getStatusColor(status)?.fill} stroke={getStatusColor(status)?.stroke}/>
                         </div>
                         <p className="font-extralight" >{status}</p>
                 </div>
-        </div>
+            </div>
     )
 }
 
 export default Description
 
 
-{/* <Link href={`./character-details/${id}`} className="bg-gray-800 text-white"> 
-</Link> */}

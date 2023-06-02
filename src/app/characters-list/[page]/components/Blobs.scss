@@ -37,12 +37,12 @@
   50% { transform: translate(20%, 20%) rotate(-220deg) scale(1.2);}
 }
 
-// .box {
-//   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-//   transition: all ease 0.2s;
-// }
+.box {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: all ease 0.2s;
+}
 
-// .box:hover {
-//   transform: translateY(-5px);
-//   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-// }
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}

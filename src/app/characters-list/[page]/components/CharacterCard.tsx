@@ -1,9 +1,9 @@
 import { CharacterType } from "../types"
 import * as React from "react"
-import CharacterImage from "../../components/CharacterImage"
+import CharacterImage from "../../../components/CharacterImage"
 import Description from "./Description"
-import Link from "next/link"
 import Card from "./Card"
+import FavoriteButton from "@/app/components/FavoriteButton"
 
 const CharacterCard = ({ characterData } : {characterData : CharacterType}) => {
   
@@ -14,14 +14,11 @@ const CharacterCard = ({ characterData } : {characterData : CharacterType}) => {
   const description = <Description name={name} status={status} id={id} />
 
   return (
-    // <Link href={`./character-details/${character.id}`}> 
-
       <Card
       image = {img}
       description = {description} 
+      favoriteBtn = {<FavoriteButton characterData={characterData} />}
       />
-
-    //  </Link>
   )
 
 }

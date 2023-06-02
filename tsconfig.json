@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/characters-list/page.jsx", "src/app/characters-list/components/Image.jsx", "src/app/character-details/[slug]/page.jsx", "src/app/characters-list/components/Header.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/characters-list/page.jsx", "src/app/characters-list/components/Image.jsx", "src/app/character-details/[slug]/page.jsx", "src/app/characters-list/components/Header.tsx", "src/app/hooks/useCounter.js", "src/app/page.js", "src/app/counter/counter.jsx", "src/app/counter/page.tsx", "src/lib/store.js", "src/app/hooks/useLoclStorage.js"],
   "exclude": ["node_modules"]
 }

@@ -7,6 +7,7 @@ import { useParams } from "next/navigation"
 import CharacterCard from "./components/CharacterCard"
 import { CharacterType } from "./types"
 import CardShimmer from "./components/CardShimmer"
+import FavoriteCharacters from "@/app/components/FavoriteCharacters"
 
 const fetchCharcter = async (id : number) => {
   const url = `${API_URL}/character/${id}`
@@ -15,15 +16,16 @@ const fetchCharcter = async (id : number) => {
 }
 
 const CharctersDetails = () => {
-  const id  = Number(useParams().slug)
+  const id  = Number(useParams()?.slug)
 
-  const {data, isLoading, isFetching, error} = useQuery({
+  const {data, isLoading, error} = useQuery({
     queryKey: ["hydrate-charachter", id],
     queryFn: () => fetchCharcter(id),
   })
 
   return (
     <>
+      <FavoriteCharacters/>
       {error && <p>Error</p>}
       {isLoading && <CardShimmer/>} 
       {data && <CharacterCard characterData={data}/>}

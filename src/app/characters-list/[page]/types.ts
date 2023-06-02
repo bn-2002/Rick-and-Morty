@@ -1,5 +1,3 @@
-import { ReactNode } from "react"
-
 export type CharacterStatusType = 'Alive' | 'Dead' | 'unknown'
 
 export type CharacterType = {
@@ -19,7 +17,12 @@ export type CharacterType = {
 
 export type CharactersType = {
     results : CharacterType[],
-    info : any
+    info : {
+        count : number
+        next: string | null
+        page : number
+        prev : string | null
+    }
 }
 
 export type CharacterDescriptionType = {

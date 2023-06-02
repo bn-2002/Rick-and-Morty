@@ -5,4 +5,6 @@ export type CharacterImageProps =  {src : string , alt : string , className? :st
 export interface CardProps {
     image: ReactNode,
     description : ReactNode
+    favoriteBtn : ReactNode
+    isShimmer? : boolean
 }

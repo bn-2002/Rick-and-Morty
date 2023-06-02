@@ -1,5 +1,7 @@
 import React from "react"
 import Card from "./Card"
+import Star from "@/app/icons/Star"
+import FavoriteButtonShimmer from "@/app/components/FavoriteButtonShimmer"
 
 const CardShimmer = () => {
 
@@ -20,6 +22,8 @@ const CardShimmer = () => {
         <Card
         image = {image}
         description = {description}
+        favoriteBtn = {<FavoriteButtonShimmer/>}
+        isShimmer = {true}
         />
   )
 }
