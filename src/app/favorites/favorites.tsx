@@ -1,10 +1,10 @@
 'use client'
 
 import React from "react"
-import Character from "../characters-list/[page]/components/CharacterCard"
+import Character from "../characters/components/CharacterCard"
 import FavoriteCharacters from "@/app/components/FavoriteCharacters"
-import Header from "../characters-list/[page]/components/Header"
-import Blobs from "../characters-list/[page]/components/Blobs"
+import Header from "../characters/components/Header"
+import Blobs from "../characters/components/Blobs"
 import useFavoritesStore from "@/lib/store"
 
 const FavoriteCharctersList = () => {    

@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import Description from '../../../app/characters-list/components/Description'
+import Description from '../../../app/characters/components/Description'
 
 const meta: Meta<typeof Description> = {
-  title: 'Pages/characters-list/components/Description',
+  title: 'Pages/characters/components/Description',
     component: Description,
   tags: ['autodocs'],
   }

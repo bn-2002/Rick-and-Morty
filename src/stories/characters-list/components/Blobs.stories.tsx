@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import '../../../app/characters-list/components/Blobs.scss'
+import '../../../app/characters/components/Blobs.scss'
 
-import Blobs from '../../../app/characters-list/components/Blobs'
+import Blobs from '../../../app/characters/components/Blobs'
 
 const meta: Meta<typeof Blobs> = {
-  title: 'Pages/characters-list/components/Blobs',
+  title: 'Pages/characters/components/Blobs',
     component: Blobs,
   tags: ['autodocs'],
   }

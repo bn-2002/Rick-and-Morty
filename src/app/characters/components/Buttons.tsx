@@ -1,7 +1,7 @@
 import { CharactersType } from "../types"
 import Button from "./Button";
 
-type ButtonsProps = {data  : CharactersType , isLoading  :boolean, pageNumber:number}
+type ButtonsProps = {data  : CharactersType , isLoading  :boolean , pageNumber : number}
 
 const Buttons = ({data , isLoading  , pageNumber} : ButtonsProps) => {
 
@@ -11,7 +11,6 @@ const Buttons = ({data , isLoading  , pageNumber} : ButtonsProps) => {
           <Button
             text="Previous"
             disabled={isLoading || !data.info.prev}
-            pageNumber={pageNumber}
           />    
             
           <p className="text-white  text-[40px]">page {pageNumber}</p>
@@ -19,7 +18,6 @@ const Buttons = ({data , isLoading  , pageNumber} : ButtonsProps) => {
           <Button
             text="Next"
             disabled={isLoading || !data.info.next}
-            pageNumber={pageNumber}
           />    
 
       </div>

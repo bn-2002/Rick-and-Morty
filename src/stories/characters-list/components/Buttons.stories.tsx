@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import Buttons from '../../../app/characters-list/components/Buttons'
-import {CharacterStatusType} from '../../../app/characters-list/types'
+import Buttons from '../../../app/characters/components/Buttons'
+import {CharacterStatusType} from '../../../app/characters/types'
 
 const meta: Meta<typeof Buttons> = {
     
-  title: 'Pages/characters-list/components/Buttons',
+  title: 'Pages/characters/components/Buttons',
     component: Buttons,
   tags: ['autodocs'],
   }

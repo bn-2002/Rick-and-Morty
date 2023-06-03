@@ -1,4 +1,4 @@
-import { CardProps } from "../../../types";
+import { CardProps } from "../../types";
 import Blobs from "./Blobs";
 
 const Card = ({image , description , favoriteBtn , isShimmer = false } : CardProps) => {

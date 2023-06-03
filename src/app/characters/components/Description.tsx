@@ -1,5 +1,5 @@
 import getStatusColor from "../helpers/getStatusColor"
-import Circle from "../../../icons/Circle"
+import Circle from "../../icons/Circle"
 import { CharacterDescriptionType } from "../types"
 import Link from "next/link"
 

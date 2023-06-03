@@ -1,6 +1,6 @@
 import Location from "../../../icons/Location"
 import Circle from "../../../icons/Circle"
-import getStatusColor from "../../../characters-list/[page]/helpers/getStatusColor"
+import getStatusColor from "../../../characters/helpers/getStatusColor"
 import {characterDataProps} from '../types'
 
 const Description = ({characterData} : characterDataProps) => {

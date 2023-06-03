@@ -1,6 +1,6 @@
 import { CharacterType } from "../types"
 import * as React from "react"
-import CharacterImage from "../../../components/CharacterImage"
+import CharacterImage from "../../components/CharacterImage"
 import Description from "./Description"
 import Card from "./Card"
 import FavoriteButton from "@/app/components/FavoriteButton"
