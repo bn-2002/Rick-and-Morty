@@ -1,6 +1,6 @@
 'use client'
 
-import checkIsFavorite from '@/app/helpers/checkIsFavorite'
+// import CheckIsFavorite from '@/app/helpers/checkIsFavorite'
 import Star from '@/app/icons/Star'
 import useFavoritesStore from '@/lib/store'
 import { useState} from 'react'
@@ -10,7 +10,13 @@ const FavoriteButton = ({characterData} : {characterData : CharacterType}) => {
 
   const increaseFavorites = useFavoritesStore((state) => state.increaseFavorites)
   const decreaseFavorites = useFavoritesStore((state) => state.decreaseFavorites)  
-  const [isFavorite , setIsFavorite] = useState(checkIsFavorite(characterData.id))
+  
+  const favorites = useFavoritesStore(state => state.favorites)
+  let isFound = favorites.find((f : CharacterType) => f.id == characterData.id)
+  if (isFound) isFound =  true
+  else isFound = false
+
+  const [isFavorite , setIsFavorite] = useState(isFound)
 
  const handler = () => {
   setIsFavorite(!isFavorite)
