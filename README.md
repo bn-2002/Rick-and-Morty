@@ -1,5 +1,7 @@
 # Rick And Morty 
 
+ A website built using Next.js, Tailwind CSS, Zustand and React Query. It features a filter section that allows users to filter characters from the Rick and Morty API based on gender and status. Users can also search for characters by name. The website utilizes the Next.js Image component to optimize image loading. Storybook.js was used for documentation. This project was a great learning experience and helped me improve my skills with these technologies.
+ 
 ## Demo
 
 [Link](https://rick-and-morty-nine-mu.vercel.app/)
