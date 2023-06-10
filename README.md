@@ -24,7 +24,6 @@ It features a filter section that allows users to filter characters from the Ric
 
 Clone the project
 
-
 ```bash
   git clone https://github.com/bn-2002/Rick-and-Morty.git
 ```
@@ -46,12 +45,6 @@ Start the server
 ```bash
   npm run dev
 ```                                                                                                                                           Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-                                                                                                                                                
-## 📚 Run Storybook
+                                                                                                                                               
 
-To run tests, run the following command
-
-```bash
-  npm run storybook
-```
 
