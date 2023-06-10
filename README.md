@@ -1,12 +1,12 @@
 # Rick And Morty 
 
- A website built using Next.js, Tailwind CSS, Zustand and React Query. It features a filter section that allows users to filter characters from the Rick and Morty API based on gender and status. Users can also search for characters by name. The website utilizes the Next.js Image component to optimize image loading. Storybook.js was used for documentation. This project was a great learning experience and helped me improve my skills with these technologies.
- 
-## Demo
+Built using the Rick and Morty api used to show the characters of this series.
+It features a filter section that allows users to filter characters from the Rick and Morty API based on gender and status. Users can also search for characters by name. User can also bookmark favorite characters. The website utilizes the Next.js Image component to optimize image loading.
 
-[Link](https://rick-and-morty-nine-mu.vercel.app/)
+## 📎 Demo
+[Link](https://rick-and-morty-bn.vercel.app/)
 
-## Tech Stack
+## ⚔ Tech Stack
 
  React Query - Zustand
 
@@ -18,16 +18,39 @@
 <div>
 
 ![scrnli_5_30_2023_3-35-11 AM](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/91b511c1-8914-4f1e-a6dd-7ffc1ba5db16)
+                                                                                                                                                
+ ## 🚀 Run Locally
 
-## Getting Started
+Clone the project
 
-First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/bn-2002/Rick-and-Morty.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```                                                                                                                                           Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+                                                                                                                                                
+## 📚 Run Storybook
+
+To run tests, run the following command
+
+```bash
+  npm run storybook
+```
 
