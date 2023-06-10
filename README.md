@@ -2,25 +2,27 @@
 
 The website was created using the Rick and Morty API to display characters from the series. It includes a filter section that allows users to sort characters based on gender and status. Additionally, users can search for characters by name and bookmark their favorites. The website also uses the Next.js Image component to optimize image loading.
 
-<img  src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/c26de295-54de-4461-bd84-953d2473f386" alt="Rick And Morty" title="Rick And Morty">
-  
+![1524058250-rick-and-morty-portal](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/1167e08a-708a-429a-95c0-7945f43ba58a)
+
 ## ⚔ Tech Stack
   
 <div class="container"> 
 <img width="50" src="https://i.ibb.co/4Jg3kBw/next-js-256x256.png" alt=""Next.js" title="Next.js">
 <img width="50" src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" title="TypeScript"/>
 <img width="50" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" alt="Tailwind CSS" title="Tailwind CSS"/>
-<img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/4299460c-2ad9-42ef-8b78-498c7e5d8f8e" alt="React Query" title="React Query"/>
-<img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/48881bc7-a11f-444b-94aa-6d7e9877028e" alt="Zustand" title="Zustand"/>
+<img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/536b29bf-ca9c-4822-996b-5bad18baf408" alt="React Query" title="React Query"/>
+<img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/68911720-64a6-4ae6-8798-2224ee9c404c" alt="Zustand" title="Zustand"/>
 <img width="50" src="https://github.com/bn-2002/Calendar/assets/71316063/a1c471c7-8fca-4422-a300-29632b365133" alt="Storybook" title="Storybook"/>
 <div>
-                                                                                                                                      
+                        
+                                                                                                                                        
 ## 📎 Demo
 [Link](https://rick-and-morty-bn.vercel.app/)
                                                                                                                                                
 ## 📸 Screenshot
   
-![screen](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/3bce7c86-8b95-40c1-9350-c9963f5f0759)
+![scrnli_6_11_2023_12-48-58 AM](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/14a7fb81-1bb4-499e-8f8a-96aba167fa37)
+                                                                                                                          
                                                                                                                                          
 ## 🚀 Run Locally
 
