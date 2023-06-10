@@ -55,7 +55,7 @@ const Description = ({characterData} : characterDataProps) => {
 
                 {/* Episodes */}
                 <p className="text-sm font-medium mb-2">
-                Episodes : {episode.length} Episodes
+                Episodes : {episode.length} Episode {`${episode.length>1?'s':''}`}
                 </p>
 
             </div>
