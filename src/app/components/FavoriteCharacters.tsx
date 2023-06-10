@@ -1,4 +1,5 @@
 'use client'
+import { useEffect } from 'react'
 
 import useFavoritesStore from '../../lib/store'
 import Link from 'next/link'
@@ -6,6 +7,16 @@ import Link from 'next/link'
 const FavoriteCharacters = () => {
 
     const favorites = useFavoritesStore(state => state.favorites)
+
+    const initialFavorites = useFavoritesStore((state) => state.initialFavorites)
+
+    useEffect(()=> {
+      if (typeof window !== 'undefined') {
+        const a = JSON.parse(localStorage.getItem('favorites')??'[]')
+        initialFavorites(a)
+      }
+    },[])
+  
 
       return (
         <div className="text-black border border-black bg-gray-300 rounded p-2 font-Dongle fixed right-8 top-8 w-fit flex z-[100] ">
