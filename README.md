@@ -1,11 +1,8 @@
 # Rick And Morty 
 
-<div>
-<img width="70%" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/c26de295-54de-4461-bd84-953d2473f386" alt="Rick And Morty" title="Rick And Morty">
-
-  
 The website was created using the Rick and Morty API to display characters from the series. It includes a filter section that allows users to sort characters based on gender and status. Additionally, users can search for characters by name and bookmark their favorites. The website also uses the Next.js Image component to optimize image loading.
-<div/>
+
+<img  src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/c26de295-54de-4461-bd84-953d2473f386" alt="Rick And Morty" title="Rick And Morty">
   
 ## ⚔ Tech Stack
   
