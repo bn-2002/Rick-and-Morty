@@ -9,7 +9,7 @@ import Buttons from "./components/Buttons"
 import CardShimmer from "./components/CardShimmer"
 import Header from "./components/Header"
 import Blobs from "./components/Blobs"
-import FavoriteCharacters from "@/app/components/FavoriteCharacters"
+import FavoriteCharacters from "../../app/components/FavoriteCharacters"
 import { useSearchParams } from "next/navigation"
 import getquery from "../helpers/getquery"
 

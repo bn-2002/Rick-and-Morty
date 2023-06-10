@@ -7,7 +7,7 @@ import { useParams } from "next/navigation"
 import CharacterCard from "./components/CharacterCard"
 import { CharacterType } from "./types"
 import CardShimmer from "./components/CardShimmer"
-import FavoriteCharacters from "@/app/components/FavoriteCharacters"
+import FavoriteCharacters from "../../components/FavoriteCharacters"
 
 const fetchCharcter = async (id : number) => {
   const url = `${API_URL}/character/${id}`

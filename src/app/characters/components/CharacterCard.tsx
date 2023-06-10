@@ -3,7 +3,7 @@ import * as React from "react"
 import CharacterImage from "../../components/CharacterImage"
 import Description from "./Description"
 import Card from "./Card"
-import FavoriteButton from "@/app/components/FavoriteButton"
+import FavoriteButton from "../../components/FavoriteButton"
 
 const CharacterCard = ({ characterData } : {characterData : CharacterType}) => {
   

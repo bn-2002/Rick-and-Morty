@@ -1,6 +1,6 @@
 import { useSearchParams } from "next/navigation"
 import { useRouter } from "next/navigation"
-import getquery from "@/app/helpers/getquery"
+import getquery from "../../helpers/getquery"
 
 const Button = ({disabled , text, pageNumber} : {disabled : boolean, text : "Previous" | "Next", pageNumber:number}) => {
     const router = useRouter()

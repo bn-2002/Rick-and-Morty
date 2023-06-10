@@ -2,14 +2,14 @@
 
 import React from "react"
 import Character from "../characters/components/CharacterCard"
-import FavoriteCharacters from "@/app/components/FavoriteCharacters"
+import FavoriteCharacters from "../../app/components/FavoriteCharacters"
 import Header from "../characters/components/Header"
 import Blobs from "../characters/components/Blobs"
-import useFavoritesStore from "@/lib/store"
+import useFavoritesStore from "../../lib/store"
 
 const FavoriteCharctersList = () => {    
 
-  const favorites = useFavoritesStore(state=>state.favorites)
+  const favorites = useFavoritesStore(state => state.favorites)
 
   return (
     <div className="overflow-hidden relative">

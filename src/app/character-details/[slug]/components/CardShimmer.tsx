@@ -1,7 +1,6 @@
 import React from "react"
 import Card from "./Card"
-import Star from "@/app/icons/Star"
-import FavoriteButtonShimmer from "@/app/components/FavoriteButtonShimmer"
+import FavoriteButtonShimmer from "../../../components/FavoriteButtonShimmer"
 
 const CardShimmer = () => {
 

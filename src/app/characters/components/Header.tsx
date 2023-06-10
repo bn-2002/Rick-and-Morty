@@ -1,6 +1,6 @@
-import FilterSection from "@/app/components/FilterSection";
-import SearchComp from "@/app/components/SearchComp";
-import RickAndMortyTitle from "@/app/icons/Rick&Morty";
+import FilterSection from "../../../app/components/FilterSection";
+import SearchComp from "../../../app/components/SearchComp";
+import RickAndMortyTitle from "../../../app/icons/Rick&Morty";
 
 const Header = () => {
   return (

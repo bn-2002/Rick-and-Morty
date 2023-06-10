@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import FavoriteButtonShimmer from "@/app/components/FavoriteButtonShimmer";
+import FavoriteButtonShimmer from "../../components/FavoriteButtonShimmer";
 
 const CardShimmer = () => {
 

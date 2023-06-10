@@ -2,7 +2,7 @@ import CharacterImage from '../../../components/CharacterImage'
 import Description from './Description'
 import Card from './Card'
 import {characterDataProps} from '../types'
-import FavoriteButton from '@/app/components/FavoriteButton'
+import FavoriteButton from '../../../components/FavoriteButton'
 
 const CharacterCard = ({characterData} : characterDataProps) => {
 

@@ -1,8 +1,7 @@
 'use client'
 
-// import CheckIsFavorite from '@/app/helpers/checkIsFavorite'
-import Star from '@/app/icons/Star'
-import useFavoritesStore from '@/lib/store'
+import Star from '../../app/icons/Star'
+import useFavoritesStore from '../../lib/store'
 import { useState} from 'react'
 import { CharacterType } from '../character-details/[slug]/types'
 

@@ -11,8 +11,14 @@ const meta: Meta<typeof Header> = {
 export default meta
 type Story = StoryObj<typeof Header>
 
+
 export const Primary: Story = {
   args: {
+  },
+  parameters: {
+    nextjs: {
+      appDirectory: true,
+    },
   },
 }
 
