@@ -19,8 +19,8 @@ It features a filter section that allows users to filter characters from the Ric
 <img width="50" src="https://github.com/bn-2002/Calendar/assets/71316063/a1c471c7-8fca-4422-a300-29632b365133" alt="Storybook" title="Storybook"/>
 <div>
 
-                                                          
- ## 🚀 Run Locally
+
+## 🚀 Run Locally
 
 Clone the project
 
@@ -43,10 +43,9 @@ Install dependencies
 Start the server
 
 ```bash
-  npm run dev
-``` 
-                                                                                                                                                Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-                                                                                                                                               
-                                                                                                                                               
- ##  Run Storybook
+  npm run start
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+                                                         
+ 
 
