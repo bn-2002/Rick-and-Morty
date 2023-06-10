@@ -20,9 +20,11 @@ It features a filter section that allows users to filter characters from the Ric
                                                                                                                                       
 ## 📎 Demo
 [Link](https://rick-and-morty-bn.vercel.app/)
-                                                                                                                                                ## 📸 Screenshot
-![Uploading scrnli_6_11_2023_12-48-58 AM.png…]()                              
-                                                                                                                                              
+                                                                                                                                               
+## 📸 Screenshot
+  
+![screen](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/3bce7c86-8b95-40c1-9350-c9963f5f0759)
+                                                                                                                                         
 ## 🚀 Run Locally
 
 Clone the project
