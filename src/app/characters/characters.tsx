@@ -11,32 +11,31 @@ import Header from "./components/Header"
 import Blobs from "./components/Blobs"
 import FavoriteCharacters from "@/app/components/FavoriteCharacters"
 import { useSearchParams } from "next/navigation"
+import getquery from "../helpers/getquery"
 
-const fetchCharcters = async ({name , pageNumber, gender , status} : {name? : string , pageNumber : number, gender:string, status : string}) => {
-  console.log('name :', name)
-  console.log('pageNumber :', pageNumber)
-  const pageSearch = (pageNumber != 1)? `page=${pageNumber}` : ''
-  const nameSearch = (name != "")? `name=${name}` : ''
-  const genderSearch = (gender != "")? `gender=${gender}` : ''
-  const statusSearch = (status != "")? `status=${status}` : ''
-
-  const url = `${API_URL}/character?${pageSearch}${name?'&':''}${nameSearch}${gender?'&':''}${genderSearch}${status?'&':''}${statusSearch}`
-  console.log('url : ' ,  url)
-  const response = await fetch(url)
-  return await response.json() as CharactersType
+const fetchCharcters = async ({pageQ, nameQ, genderQ, statusQ} : {pageQ : string,nameQ : string,genderQ : string,statusQ : string}) => {
+    
+    const url = `${API_URL}/character/?${pageQ}${nameQ}${genderQ}${statusQ}`.replace('?&','?')
+    
+    const response = await fetch(url)
+    const Result = await response.json() as CharactersType | {error : string}
+    return Result
 }
 
 const CharctersList = () => {
+
   const searchParams = useSearchParams()
 
+  const pageQ = getquery(searchParams,'page')
+  const nameQ = getquery(searchParams,'name')
+  const genderQ = getquery(searchParams,'gender')
+  const statusQ = getquery(searchParams,'status')
+
   let pageNumber = Number(searchParams?.get("page")) || 1
-  const name = searchParams?.get("name") || ""
-  const gender = searchParams?.get("gender") || ""
-  const status = searchParams?.get("status") || ""
 
   const {data, isLoading, isFetching, error} = useQuery({
-    queryKey: ["hydrate-charachters", {pageNumber,name,gender,status}],
-    queryFn: () => fetchCharcters({pageNumber,name,gender,status}),
+    queryKey: ["hydrate-charachters", {pageQ,nameQ,genderQ,statusQ}],
+    queryFn: () => fetchCharcters({pageQ,nameQ,genderQ,statusQ}),
     keepPreviousData : true
   })
 
@@ -49,10 +48,12 @@ const CharctersList = () => {
           <FavoriteCharacters/>
 
           {isLoading && [...Array(20)].map((i ,index) => <CardShimmer key={index}/>)}
-          
-          {data && data.results.map(character => <Character key={character.id} characterData={character}/>)}
-          
-          {data && <Buttons data={data} isLoading={isLoading} pageNumber={pageNumber}/>}
+        
+          {data && 'error' in data && <p className="text-white text-[2.5rem] text-center w-full font-Dongle">{data.error}</p>} 
+
+          {data && 'results' in data && 'info' in data && data.results.map((character :any) => <Character key={character.id} characterData={character}/>)}
+
+          {data && 'results' in data && 'info' in data && data.results && <Buttons data={data} isLoading={isLoading} pageNumber={pageNumber}/>}
 
       </div>
     </div>

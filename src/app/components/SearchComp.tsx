@@ -2,28 +2,28 @@ import { useState } from "react"
 import SearchIcon from "../icons/SearchIcon"
 import { useSearchParams } from "next/navigation"
 import { useRouter } from "next/navigation"
+import getquery from "../helpers/getquery"
 
 const SearchComp = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
-    let nameSearch = searchParams?.get("name") || undefined
-    let genderSearch = searchParams?.get("gender") || undefined
-    let statusSearch = searchParams?.get("status") || undefined    
-    const [name, setName] = useState<string>(nameSearch? nameSearch : "")
+    const [name, setName] = useState<string>(getquery(searchParams,'name').slice(6))
 
 
     const handleClick = () => {
-        if (name.length > 0) {
-            const newPageURL = `/characters?${nameSearch?`name=${nameSearch}&`:''}${statusSearch?`status=${statusSearch}&`:''}${genderSearch?`gender=${genderSearch}`:''}`
-            router.push(newPageURL)        
-        }
-        if (name.length === 0 && !nameSearch && !statusSearch) {
-          router.push(`/characters?page=1`)
-      }
+        const genderQ = getquery(searchParams,'gender')
+        const statusQ = getquery(searchParams,'status')
+
+        const nameQ = name.length > 0 ? `name=${name}` : ''
+
+        const newPageURL = `./characters?${nameQ}${genderQ}${statusQ}`.replace('?&','?')
+
+        router.push(newPageURL)        
     }
 
+
     return (
-        <div className="w-[50%] relative z-50 m-2">
+        <div className=" w-full sm:w-3/4 xl:w-1/2 relative z-50 m-2 text-black">
             <input 
                 onChange={(e)=>setName(e.target.value)} 
                 type="search" 

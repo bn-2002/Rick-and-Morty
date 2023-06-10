@@ -1,7 +1,7 @@
 import { CharactersType } from "../types"
 import Button from "./Button";
 
-type ButtonsProps = {data  : CharactersType , isLoading  :boolean , pageNumber : number}
+type ButtonsProps = {data  : CharactersType , isLoading  :boolean , pageNumber : number, }
 
 const Buttons = ({data , isLoading  , pageNumber} : ButtonsProps) => {
 
@@ -9,6 +9,7 @@ const Buttons = ({data , isLoading  , pageNumber} : ButtonsProps) => {
       <div className="flex justify-between w-full py-10 items-center font-Dongle selection:text-yellow-400 flex-wrap">
 
           <Button
+           pageNumber={ pageNumber}
             text="Previous"
             disabled={isLoading || !data.info.prev}
           />    
@@ -17,6 +18,7 @@ const Buttons = ({data , isLoading  , pageNumber} : ButtonsProps) => {
 
           <Button
             text="Next"
+            pageNumber={ pageNumber}
             disabled={isLoading || !data.info.next}
           />    
 
