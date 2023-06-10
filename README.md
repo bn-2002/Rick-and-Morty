@@ -1,12 +1,9 @@
-![1524058250-rick-and-morty-portal](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/c26de295-54de-4461-bd84-953d2473f386)
-
 # Rick And Morty 
+
+![1524058250-rick-and-morty-portal](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/c26de295-54de-4461-bd84-953d2473f386)
 
 Built using the Rick and Morty api used to show the characters of this series.
 It features a filter section that allows users to filter characters from the Rick and Morty API based on gender and status. Users can also search for characters by name. User can also bookmark favorite characters. The website utilizes the Next.js Image component to optimize image loading.
-
-## 📎 Demo
-[Link](https://rick-and-morty-bn.vercel.app/)
 
 ## ⚔ Tech Stack
 
@@ -20,8 +17,12 @@ It features a filter section that allows users to filter characters from the Ric
 <img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/48881bc7-a11f-444b-94aa-6d7e9877028e" alt="Zustand" title="Zustand"/>
 <img width="50" src="https://github.com/bn-2002/Calendar/assets/71316063/a1c471c7-8fca-4422-a300-29632b365133" alt="Storybook" title="Storybook"/>
 <div>
-
-
+                                                                                                                                      
+## 📎 Demo
+[Link](https://rick-and-morty-bn.vercel.app/)
+                                                                                                                                                ## 📸 Screenshot
+![Uploading scrnli_6_11_2023_12-48-58 AM.png…]()                              
+                                                                                                                                              
 ## 🚀 Run Locally
 
 Clone the project
