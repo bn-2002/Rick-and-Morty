@@ -14,11 +14,11 @@ It features a filter section that allows users to filter characters from the Ric
 <img width="50" src="https://i.ibb.co/4Jg3kBw/next-js-256x256.png" alt=""Next.js" title="Next.js">
 <img width="50" src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" title="TypeScript"/>
 <img width="50" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" alt="Tailwind CSS" title="Tailwind CSS"/>
-<img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/91b511c1-8914-4f1e-a6dd-7ffc1ba5db16" alt="Storybook" title="React query"/>
+<img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/4299460c-2ad9-42ef-8b78-498c7e5d8f8e" alt="React Query" title="React Query"/>
 <img width="50" src="https://github.com/bn-2002/Calendar/assets/71316063/a1c471c7-8fca-4422-a300-29632b365133" alt="Storybook" title="Storybook"/>
 <div>
 
-                                                                                                                                                
+                                                                                       
  ## 🚀 Run Locally
 
 Clone the project
