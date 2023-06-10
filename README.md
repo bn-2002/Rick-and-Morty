@@ -1,3 +1,5 @@
+![1524058250-rick-and-morty-portal](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/c26de295-54de-4461-bd84-953d2473f386)
+
 # Rick And Morty 
 
 Built using the Rick and Morty api used to show the characters of this series.
@@ -47,5 +49,11 @@ Start the server
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
                                                          
- 
+ ## 📚 Run Storybook
+
+To run storybook, run the following command
+
+```bash
+  npm run storybook
+```
 
