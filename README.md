@@ -12,7 +12,7 @@ The website was created using the Rick and Morty API to display characters from 
 <img width="50" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" alt="Tailwind CSS" title="Tailwind CSS"/>
 <img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/536b29bf-ca9c-4822-996b-5bad18baf408" alt="React Query" title="React Query"/>
 <img width="50" src="https://github.com/bn-2002/Rick-and-Morty/assets/71316063/68911720-64a6-4ae6-8798-2224ee9c404c" alt="Zustand" title="Zustand"/>
-<img width="50" src="https://github.com/bn-2002/Calendar/assets/71316063/a1c471c7-8fca-4422-a300-29632b365133" alt="Storybook" title="Storybook"/>
+<img width="50" src="https://raw.githubusercontent.com/storybookjs/brand/37c5e9bde5c56b69a8c4312de7d60fb3a9d7de9d/icon/icon-storybook-default.svg" alt="Storybook" title="Storybook"/>
 <div>
                         
                                                                                                                                         
