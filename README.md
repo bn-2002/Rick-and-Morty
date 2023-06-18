@@ -2,8 +2,6 @@
 
 The website was created using the Rick and Morty API to display characters from the series. It includes a filter section that allows users to sort characters based on gender and status. Additionally, users can search for characters by name and bookmark their favorites. The website also uses the Next.js Image component to optimize image loading.
 
-![1524058250-rick-and-morty-portal](https://github.com/bn-2002/Rick-and-Morty/assets/71316063/1167e08a-708a-429a-95c0-7945f43ba58a)
-
 ## ⚔ Tech Stack
   
 <div class="container"> 
